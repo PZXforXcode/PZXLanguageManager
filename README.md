@@ -1,5 +1,23 @@
 # PZXLanguageManager
 iOS Swift 本地化 Localizable 方案 
+
+# iOS Swift 本地化总结
+
+## 一.自己建立LanguageManager的方式
+
+### 1.建立Localizable文件
+
+参考地址
+
+https://www.jianshu.com/p/478b3f90187
+
+上面地址可以建立Localizable文件
+
+### 2.创建LanguageManager.swift
+
+文件代码
+
+```swift
 //
 //  LanguageManager.swift
 //  Localizable
@@ -129,4 +147,107 @@ extension LocalizableManager {
 
 }
 
+
+
+```
+
+### 3.使用
+
+
+
+```swift
+//
+//  ViewController.swift
+//  Localizable
+//
+//  Created by - on 2023/7/4.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+
+    @IBOutlet weak var textLabel: UILabel!
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        
+//三方用法
+//        textLabel.hc_Text = "geeting"
+
+        setUpdateUI()
+        
+        NotificationCenter.default.addObserver(forName: LocalizableManager.languageChangedNotification, object: nil,  queue: nil) { (notification) in
+            self.setUpdateUI()
+        }
+
+
+
+    }
+    
+    func setUpdateUI(){
+        //取值
+        //自己写的LanguageManager用法
+        textLabel.text = LocalizableManager.localValue("geeting")
+    }
+
+
+    @IBAction func jumpToSecondButtonPressed(_ sender: UIButton) {
+        
+        let vc : SecondLanguageViewController = UIStoryboard.init(name: "SecondLanguageViewController", bundle: nil).instantiateViewController(withIdentifier: "SecondLanguageViewController") as! SecondLanguageViewController;
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func switchChineseButtonPressed(_ sender: UIButton) {
+        
+        //自己写的LanguageManager用法
+        LocalizableManager.setLanguage(.chinese)
+
+        //三方用法
+//        HCLocalizableManager.share.updateLanguage("zh-Hans")
+//        //语言切换监听
+//        HCLocalizableManager.share.languageDidChange {
+//            debugPrint("语言切换了")
+//            // 当前语言type,后端需要数据
+//            debugPrint("当前语言type:" + HCLocalizableResourcesFilter.share.currentLanguageType)
+//        }
+
+        
+    }
+    
+    @IBAction func switchEnglishButtonPressed(_ sender: UIButton) {
+        //自己写的LanguageManager用法
+        LocalizableManager.setLanguage(.english)
+
+        //三方用法
+//        HCLocalizableManager.share.updateLanguage("en")
+//        //语言切换监听
+//        HCLocalizableManager.share.languageDidChange {
+//            debugPrint("语言切换了")
+//            // 当前语言type,后端需要数据
+//            debugPrint("当前语言type:" + HCLocalizableResourcesFilter.share.currentLanguageType)
+//        }
+
+        
+    }
+    
+    
+}
+
+
+```
+
+## 二.三方使用
+
+### 1.使用三方**HCLanguageSwitch**
+
+发现了一个三方**HCLanguageSwitch**
+
+比较好用用法也在Demo里
+
+
+
+### Demo地址:https://github.com/PZXforXcode/PZXLanguageManager
 
