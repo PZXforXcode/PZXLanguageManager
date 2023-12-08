@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		890201F52A7CE2AD00FBEFA4 /* HCLocalizableResourcesFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890201F42A7CE2AD00FBEFA4 /* HCLocalizableResourcesFilter.swift */; };
+		890201F72A7CE2D100FBEFA4 /* HCLanguageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890201F62A7CE2D100FBEFA4 /* HCLanguageModel.swift */; };
+		890201F92A7CE2F100FBEFA4 /* LanguageTypeAndBundle.json in Resources */ = {isa = PBXBuildFile; fileRef = 890201F82A7CE2F100FBEFA4 /* LanguageTypeAndBundle.json */; };
+		893B14F92A53A79A00593BB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893B14F82A53A79A00593BB5 /* AppDelegate.swift */; };
+		893B14FB2A53A79A00593BB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893B14FA2A53A79A00593BB5 /* SceneDelegate.swift */; };
+		893B14FD2A53A79A00593BB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893B14FC2A53A79A00593BB5 /* ViewController.swift */; };
+		893B15002A53A79A00593BB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 893B14FE2A53A79A00593BB5 /* Main.storyboard */; };
+		893B15022A53A79C00593BB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 893B15012A53A79C00593BB5 /* Assets.xcassets */; };
+		893B15052A53A79C00593BB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 893B15032A53A79C00593BB5 /* LaunchScreen.storyboard */; };
+		893B15282A53A86B00593BB5 /* NSObject+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893B15172A53A86B00593BB5 /* NSObject+Localizable.swift */; };
+		893B15292A53A86B00593BB5 /* HCLocalizableManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893B15182A53A86B00593BB5 /* HCLocalizableManager.swift */; };
+		893B152A2A53A86B00593BB5 /* HCLocalizableDeinitBlockExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893B15192A53A86B00593BB5 /* HCLocalizableDeinitBlockExecutor.swift */; };
+		893B152B2A53A86B00593BB5 /* HCLocalizableManager-OC.m in Sources */ = {isa = PBXBuildFile; fileRef = 893B151A2A53A86B00593BB5 /* HCLocalizableManager-OC.m */; };
+		893B152C2A53A86B00593BB5 /* NSObject+LocalizableDeinit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893B151B2A53A86B00593BB5 /* NSObject+LocalizableDeinit.swift */; };
+		893B152D2A53A86B00593BB5 /* UITextField+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893B151D2A53A86B00593BB5 /* UITextField+Localizable.swift */; };
+		893B152E2A53A86B00593BB5 /* UISearchBar+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893B151E2A53A86B00593BB5 /* UISearchBar+Localizable.swift */; };
+		893B152F2A53A86B00593BB5 /* UITabBarItem+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893B151F2A53A86B00593BB5 /* UITabBarItem+Localizable.swift */; };
+		893B15302A53A86B00593BB5 /* UITextView+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893B15202A53A86B00593BB5 /* UITextView+Localizable.swift */; };
+		893B15312A53A86B00593BB5 /* UIButton+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893B15212A53A86B00593BB5 /* UIButton+Localizable.swift */; };
+		893B15322A53A86B00593BB5 /* UIViewController+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893B15222A53A86B00593BB5 /* UIViewController+Localizable.swift */; };
+		893B15332A53A86B00593BB5 /* UINavigationItem+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893B15232A53A86B00593BB5 /* UINavigationItem+Localizable.swift */; };
+		893B15342A53A86B00593BB5 /* UIImageView+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893B15242A53A86B00593BB5 /* UIImageView+Localizable.swift */; };
+		893B15352A53A86B00593BB5 /* UILabel+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893B15252A53A86B00593BB5 /* UILabel+Localizable.swift */; };
+		893B15362A53A86B00593BB5 /* UIImage+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893B15262A53A86B00593BB5 /* UIImage+Localizable.swift */; };
+		893B15372A53A86B00593BB5 /* UIBarButtonItem+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893B15272A53A86B00593BB5 /* UIBarButtonItem+Localizable.swift */; };
+		89B8A6192B229E5A00EC3E22 /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B8A6182B229E5A00EC3E22 /* LanguageManager.swift */; };
+		89B8A61B2B22B0F800EC3E22 /* SecondLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B8A61A2B22B0F800EC3E22 /* SecondLanguageViewController.swift */; };
+		89B8A61D2B22B10000EC3E22 /* SecondLanguageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89B8A61C2B22B10000EC3E22 /* SecondLanguageViewController.storyboard */; };
+		89B8A61F2B22B37300EC3E22 /* ThirdLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B8A61E2B22B37300EC3E22 /* ThirdLanguageViewController.swift */; };
+		89B8A6212B22B39100EC3E22 /* ThirdLanguageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89B8A6202B22B39100EC3E22 /* ThirdLanguageViewController.storyboard */; };
+		89E42AA22AD6632A00434719 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89E42AA42AD6632A00434719 /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		890201F42A7CE2AD00FBEFA4 /* HCLocalizableResourcesFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCLocalizableResourcesFilter.swift; sourceTree = "<group>"; };
+		890201F62A7CE2D100FBEFA4 /* HCLanguageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCLanguageModel.swift; sourceTree = "<group>"; };
+		890201F82A7CE2F100FBEFA4 /* LanguageTypeAndBundle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LanguageTypeAndBundle.json; sourceTree = "<group>"; };
+		893B14F52A53A79A00593BB5 /* Localizable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Localizable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		893B14F82A53A79A00593BB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		893B14FA2A53A79A00593BB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		893B14FC2A53A79A00593BB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		893B14FF2A53A79A00593BB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		893B15012A53A79C00593BB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		893B15042A53A79C00593BB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		893B15062A53A79C00593BB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		893B150E2A53A7CB00593BB5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		893B150F2A53A7CB00593BB5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		893B15162A53A86B00593BB5 /* HCLocalizableManager-OC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HCLocalizableManager-OC.h"; sourceTree = "<group>"; };
+		893B15172A53A86B00593BB5 /* NSObject+Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Localizable.swift"; sourceTree = "<group>"; };
+		893B15182A53A86B00593BB5 /* HCLocalizableManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCLocalizableManager.swift; sourceTree = "<group>"; };
+		893B15192A53A86B00593BB5 /* HCLocalizableDeinitBlockExecutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCLocalizableDeinitBlockExecutor.swift; sourceTree = "<group>"; };
+		893B151A2A53A86B00593BB5 /* HCLocalizableManager-OC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HCLocalizableManager-OC.m"; sourceTree = "<group>"; };
+		893B151B2A53A86B00593BB5 /* NSObject+LocalizableDeinit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+LocalizableDeinit.swift"; sourceTree = "<group>"; };
+		893B151D2A53A86B00593BB5 /* UITextField+Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Localizable.swift"; sourceTree = "<group>"; };
+		893B151E2A53A86B00593BB5 /* UISearchBar+Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Localizable.swift"; sourceTree = "<group>"; };
+		893B151F2A53A86B00593BB5 /* UITabBarItem+Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBarItem+Localizable.swift"; sourceTree = "<group>"; };
+		893B15202A53A86B00593BB5 /* UITextView+Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Localizable.swift"; sourceTree = "<group>"; };
+		893B15212A53A86B00593BB5 /* UIButton+Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Localizable.swift"; sourceTree = "<group>"; };
+		893B15222A53A86B00593BB5 /* UIViewController+Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Localizable.swift"; sourceTree = "<group>"; };
+		893B15232A53A86B00593BB5 /* UINavigationItem+Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationItem+Localizable.swift"; sourceTree = "<group>"; };
+		893B15242A53A86B00593BB5 /* UIImageView+Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Localizable.swift"; sourceTree = "<group>"; };
+		893B15252A53A86B00593BB5 /* UILabel+Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Localizable.swift"; sourceTree = "<group>"; };
+		893B15262A53A86B00593BB5 /* UIImage+Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Localizable.swift"; sourceTree = "<group>"; };
+		893B15272A53A86B00593BB5 /* UIBarButtonItem+Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Localizable.swift"; sourceTree = "<group>"; };
+		89B8A6182B229E5A00EC3E22 /* LanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
+		89B8A61A2B22B0F800EC3E22 /* SecondLanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondLanguageViewController.swift; sourceTree = "<group>"; };
+		89B8A61C2B22B10000EC3E22 /* SecondLanguageViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondLanguageViewController.storyboard; sourceTree = "<group>"; };
+		89B8A61E2B22B37300EC3E22 /* ThirdLanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdLanguageViewController.swift; sourceTree = "<group>"; };
+		89B8A6202B22B39100EC3E22 /* ThirdLanguageViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ThirdLanguageViewController.storyboard; sourceTree = "<group>"; };
+		89E42AA32AD6632A00434719 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		89E42AA52AD6632C00434719 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		893B14F22A53A79A00593BB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		890201F32A7CE29C00FBEFA4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				893B15142A53A86B00593BB5 /* LanguageSwitch */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		893B14EC2A53A79A00593BB5 = {
+			isa = PBXGroup;
+			children = (
+				893B14F72A53A79A00593BB5 /* Localizable */,
+				893B14F62A53A79A00593BB5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		893B14F62A53A79A00593BB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				893B14F52A53A79A00593BB5 /* Localizable.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		893B14F72A53A79A00593BB5 /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				89B8A6182B229E5A00EC3E22 /* LanguageManager.swift */,
+				890201F32A7CE29C00FBEFA4 /* Resources */,
+				893B14F82A53A79A00593BB5 /* AppDelegate.swift */,
+				893B14FA2A53A79A00593BB5 /* SceneDelegate.swift */,
+				893B14FC2A53A79A00593BB5 /* ViewController.swift */,
+				89B8A61A2B22B0F800EC3E22 /* SecondLanguageViewController.swift */,
+				89B8A61C2B22B10000EC3E22 /* SecondLanguageViewController.storyboard */,
+				89B8A61E2B22B37300EC3E22 /* ThirdLanguageViewController.swift */,
+				89B8A6202B22B39100EC3E22 /* ThirdLanguageViewController.storyboard */,
+				893B14FE2A53A79A00593BB5 /* Main.storyboard */,
+				893B15012A53A79C00593BB5 /* Assets.xcassets */,
+				893B15032A53A79C00593BB5 /* LaunchScreen.storyboard */,
+				893B15062A53A79C00593BB5 /* Info.plist */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+		893B15142A53A86B00593BB5 /* LanguageSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				89E42AA42AD6632A00434719 /* Localizable.strings */,
+				890201F82A7CE2F100FBEFA4 /* LanguageTypeAndBundle.json */,
+				890201F62A7CE2D100FBEFA4 /* HCLanguageModel.swift */,
+				890201F42A7CE2AD00FBEFA4 /* HCLocalizableResourcesFilter.swift */,
+				893B15152A53A86B00593BB5 /* Core */,
+				893B151C2A53A86B00593BB5 /* UIKit+Localizable */,
+			);
+			path = LanguageSwitch;
+			sourceTree = "<group>";
+		};
+		893B15152A53A86B00593BB5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				893B15162A53A86B00593BB5 /* HCLocalizableManager-OC.h */,
+				893B151A2A53A86B00593BB5 /* HCLocalizableManager-OC.m */,
+				893B15172A53A86B00593BB5 /* NSObject+Localizable.swift */,
+				893B15182A53A86B00593BB5 /* HCLocalizableManager.swift */,
+				893B15192A53A86B00593BB5 /* HCLocalizableDeinitBlockExecutor.swift */,
+				893B151B2A53A86B00593BB5 /* NSObject+LocalizableDeinit.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		893B151C2A53A86B00593BB5 /* UIKit+Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				893B151D2A53A86B00593BB5 /* UITextField+Localizable.swift */,
+				893B151E2A53A86B00593BB5 /* UISearchBar+Localizable.swift */,
+				893B151F2A53A86B00593BB5 /* UITabBarItem+Localizable.swift */,
+				893B15202A53A86B00593BB5 /* UITextView+Localizable.swift */,
+				893B15212A53A86B00593BB5 /* UIButton+Localizable.swift */,
+				893B15222A53A86B00593BB5 /* UIViewController+Localizable.swift */,
+				893B15232A53A86B00593BB5 /* UINavigationItem+Localizable.swift */,
+				893B15242A53A86B00593BB5 /* UIImageView+Localizable.swift */,
+				893B15252A53A86B00593BB5 /* UILabel+Localizable.swift */,
+				893B15262A53A86B00593BB5 /* UIImage+Localizable.swift */,
+				893B15272A53A86B00593BB5 /* UIBarButtonItem+Localizable.swift */,
+			);
+			path = "UIKit+Localizable";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		893B14F42A53A79A00593BB5 /* Localizable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 893B15092A53A79C00593BB5 /* Build configuration list for PBXNativeTarget "Localizable" */;
+			buildPhases = (
+				893B14F12A53A79A00593BB5 /* Sources */,
+				893B14F22A53A79A00593BB5 /* Frameworks */,
+				893B14F32A53A79A00593BB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Localizable;
+			productName = Localizable;
+			productReference = 893B14F52A53A79A00593BB5 /* Localizable.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		893B14ED2A53A79A00593BB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					893B14F42A53A79A00593BB5 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 893B14F02A53A79A00593BB5 /* Build configuration list for PBXProject "Localizable" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 893B14EC2A53A79A00593BB5;
+			productRefGroup = 893B14F62A53A79A00593BB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				893B14F42A53A79A00593BB5 /* Localizable */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		893B14F32A53A79A00593BB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89E42AA22AD6632A00434719 /* Localizable.strings in Resources */,
+				89B8A61D2B22B10000EC3E22 /* SecondLanguageViewController.storyboard in Resources */,
+				893B15052A53A79C00593BB5 /* LaunchScreen.storyboard in Resources */,
+				893B15022A53A79C00593BB5 /* Assets.xcassets in Resources */,
+				890201F92A7CE2F100FBEFA4 /* LanguageTypeAndBundle.json in Resources */,
+				893B15002A53A79A00593BB5 /* Main.storyboard in Resources */,
+				89B8A6212B22B39100EC3E22 /* ThirdLanguageViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		893B14F12A53A79A00593BB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89B8A61B2B22B0F800EC3E22 /* SecondLanguageViewController.swift in Sources */,
+				893B152E2A53A86B00593BB5 /* UISearchBar+Localizable.swift in Sources */,
+				893B15342A53A86B00593BB5 /* UIImageView+Localizable.swift in Sources */,
+				893B15322A53A86B00593BB5 /* UIViewController+Localizable.swift in Sources */,
+				893B152B2A53A86B00593BB5 /* HCLocalizableManager-OC.m in Sources */,
+				893B15302A53A86B00593BB5 /* UITextView+Localizable.swift in Sources */,
+				893B152F2A53A86B00593BB5 /* UITabBarItem+Localizable.swift in Sources */,
+				893B15332A53A86B00593BB5 /* UINavigationItem+Localizable.swift in Sources */,
+				89B8A6192B229E5A00EC3E22 /* LanguageManager.swift in Sources */,
+				893B14FD2A53A79A00593BB5 /* ViewController.swift in Sources */,
+				893B152C2A53A86B00593BB5 /* NSObject+LocalizableDeinit.swift in Sources */,
+				893B15292A53A86B00593BB5 /* HCLocalizableManager.swift in Sources */,
+				893B15352A53A86B00593BB5 /* UILabel+Localizable.swift in Sources */,
+				890201F72A7CE2D100FBEFA4 /* HCLanguageModel.swift in Sources */,
+				890201F52A7CE2AD00FBEFA4 /* HCLocalizableResourcesFilter.swift in Sources */,
+				893B15372A53A86B00593BB5 /* UIBarButtonItem+Localizable.swift in Sources */,
+				893B14F92A53A79A00593BB5 /* AppDelegate.swift in Sources */,
+				893B15312A53A86B00593BB5 /* UIButton+Localizable.swift in Sources */,
+				893B15282A53A86B00593BB5 /* NSObject+Localizable.swift in Sources */,
+				893B14FB2A53A79A00593BB5 /* SceneDelegate.swift in Sources */,
+				893B152A2A53A86B00593BB5 /* HCLocalizableDeinitBlockExecutor.swift in Sources */,
+				893B15362A53A86B00593BB5 /* UIImage+Localizable.swift in Sources */,
+				89B8A61F2B22B37300EC3E22 /* ThirdLanguageViewController.swift in Sources */,
+				893B152D2A53A86B00593BB5 /* UITextField+Localizable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		893B14FE2A53A79A00593BB5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				893B14FF2A53A79A00593BB5 /* Base */,
+				893B150E2A53A7CB00593BB5 /* zh-Hans */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		893B15032A53A79C00593BB5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				893B15042A53A79C00593BB5 /* Base */,
+				893B150F2A53A7CB00593BB5 /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		89E42AA42AD6632A00434719 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89E42AA32AD6632A00434719 /* en */,
+				89E42AA52AD6632C00434719 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		893B15072A53A79C00593BB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		893B15082A53A79C00593BB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		893B150A2A53A79C00593BB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KCNSS22SRZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Localizable/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pzx.Localizable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		893B150B2A53A79C00593BB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KCNSS22SRZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Localizable/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pzx.Localizable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		893B14F02A53A79A00593BB5 /* Build configuration list for PBXProject "Localizable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				893B15072A53A79C00593BB5 /* Debug */,
+				893B15082A53A79C00593BB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		893B15092A53A79C00593BB5 /* Build configuration list for PBXNativeTarget "Localizable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				893B150A2A53A79C00593BB5 /* Debug */,
+				893B150B2A53A79C00593BB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 893B14ED2A53A79A00593BB5 /* Project object */;
+}
